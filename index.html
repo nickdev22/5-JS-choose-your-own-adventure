@@ -4,8 +4,48 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="main.css" />
   </head>
   <body>
+    <h1 class="title">THE WORLD'S HARDEST GAME</h1>
+    <p>Choose a door: Door 1 or Door 2?</p>
+    <div class="buttons">
+      <button onclick="doorDeath(); gameOver(); yourScore0();">Door 1</button>
+      <button onclick="doorPass(); chestButton1(); chestButton2();">
+        Door 2
+      </button>
+    </div>
+
+    <p id="second-stage"></p>
+    <div class="buttons">
+      <button
+        id="chest-button1"
+        onclick="chestPass(); potionButton1(); potionButton2();"
+      ></button>
+      <button
+        id="chest-button2"
+        onclick="chestDeath(); gameOver(); yourScore1();"
+      ></button>
+    </div>
+
+    <p id="third-stage"></p>
+    <div class="buttons">
+      <button
+        id="potion-button1"
+        onclick="potionPass(); youWin(); yourScore3();"
+      ></button>
+      <button
+        id="potion-button2"
+        onclick="potionDeath(); gameOver(); yourScore2();"
+      ></button>
+    </div>
+
+    <p id="fourth-stage"></p>
+
+    <h1 id="result"></h1>
+
+    <p id="score"></p>
+
     <script src="main.js"></script>
   </body>
 </html>

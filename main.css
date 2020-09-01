@@ -1,0 +1,30 @@
+body {
+  color: rgb(46, 38, 38);
+  background-color: rgb(59, 177, 177);
+  font-family: Arial, Helvetica, sans-serif;
+}
+button {
+  border: none;
+  color: white;
+  background-color: rgb(59, 177, 177);
+  font-size: 30px;
+  cursor: pointer;
+  margin: 10px;
+}
+.title {
+  text-align: center;
+  font-size: 50px;
+  font-weight: bolder;
+}
+p {
+  text-align: center;
+  font-size: 30px;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+#result {
+  text-align: center;
+  color: rgb(163, 17, 17);
+}
